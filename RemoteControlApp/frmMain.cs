@@ -109,6 +109,9 @@ namespace RemoteControlApp
         {
             p.CurrentAppType = p.AppType.Server;
             IniFile.IniWriteValue(p.IniSection.SysConfig.ToString(), "CurrentAppType", p.CurrentAppType.ToString(), p.IniFilePath);
+            Form f = new frmServer();
+            f.Show();
+            this.Hide();
 
 
         }
@@ -117,6 +120,9 @@ namespace RemoteControlApp
         {
             p.CurrentAppType = p.AppType.Client;
             IniFile.IniWriteValue(p.IniSection.SysConfig.ToString(), "CurrentAppType", p.CurrentAppType.ToString(), p.IniFilePath);
+            Form f = new frmClient();
+            f.Show();
+            this.Hide();
         }
     }
 }
