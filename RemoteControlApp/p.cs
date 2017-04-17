@@ -68,7 +68,7 @@ namespace RemoteControlApp
         /// read value from config file
         /// </summary>
         /// <param name="inifilepath">ini file path</param>
-        private static void readConfigValue(string inifilepath)
+        public  static void readConfigValue(string inifilepath)
         {
 
             string _CurrentAppType = IniFile.IniReadValue(IniSection.SysConfig.ToString(), "CurrentAppType", inifilepath);

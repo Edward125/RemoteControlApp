@@ -7,6 +7,7 @@ using System.Drawing;
 using System.IO;
 using System.Text;
 using System.Windows.Forms;
+using Edward;
 
 namespace RemoteControlApp
 {
@@ -21,7 +22,11 @@ namespace RemoteControlApp
         {
             //
             this.Text = Application.ProductName + ", Ver:" + Application.ProductVersion + ", Author:edward_song@yeah.net";
-
+            checkFolder();
+            if (!File.Exists(p.IniFilePath))
+                p.createIniFile(p.IniFilePath);
+            p.readConfigValue(p.IniFilePath);
+            
             
         }
 
@@ -99,5 +104,19 @@ namespace RemoteControlApp
                 Directory.CreateDirectory(p.SysLogFolder);
         }
         #endregion
+
+        private void btnServer_Click(object sender, EventArgs e)
+        {
+            p.CurrentAppType = p.AppType.Server;
+            IniFile.IniWriteValue(p.IniSection.SysConfig.ToString(), "CurrentAppType", p.CurrentAppType.ToString(), p.IniFilePath);
+
+
+        }
+
+        private void btnClient_Click(object sender, EventArgs e)
+        {
+            p.CurrentAppType = p.AppType.Client;
+            IniFile.IniWriteValue(p.IniSection.SysConfig.ToString(), "CurrentAppType", p.CurrentAppType.ToString(), p.IniFilePath);
+        }
     }
 }
