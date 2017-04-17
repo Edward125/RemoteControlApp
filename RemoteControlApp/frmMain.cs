@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Text;
 using System.Windows.Forms;
 
@@ -21,6 +22,7 @@ namespace RemoteControlApp
             //
             this.Text = Application.ProductName + ", Ver:" + Application.ProductVersion + ", Author:edward_song@yeah.net";
 
+            
         }
 
 
@@ -51,6 +53,51 @@ namespace RemoteControlApp
 
 
 
+        #endregion
+
+
+        #region savelog
+
+        /// <summary>
+        /// 保存log
+        /// </summary>
+        /// <param name="logcontents">log內容</param>
+        public static void saveLog(string logcontents)
+        {
+            //根据logtype获取对应的文件路徑以及文件名
+            string logpath = string.Empty;
+
+            //判斷文件是否存在，不存在就创建文件，存在就写入文件
+            if (!File.Exists(@logpath))
+            {
+                FileStream fs = File.Create(@logpath);
+                fs.Close();
+            }
+            try
+            {
+
+                File.AppendAllText(@logpath, DateTime.Now.ToString("yyyyMMddHHmmss") + " " + @logcontents + "\r\n");
+            }
+            catch (Exception)
+            {
+                //wait
+
+            }
+
+
+        }
+
+        #endregion
+
+        #region checkFoder
+        private void checkFolder()
+        {
+
+            if (!Directory.Exists(p.AppFolder))
+                Directory.CreateDirectory(p.AppFolder);
+            if (!Directory.Exists(p.SysLogFolder))
+                Directory.CreateDirectory(p.SysLogFolder);
+        }
         #endregion
     }
 }
