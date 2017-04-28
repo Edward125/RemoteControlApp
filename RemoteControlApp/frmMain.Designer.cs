@@ -34,10 +34,10 @@
             // 
             // btnServer
             // 
-            this.btnServer.Font = new System.Drawing.Font("Calibri", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnServer.Location = new System.Drawing.Point(114, 72);
+            this.btnServer.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnServer.Location = new System.Drawing.Point(60, 63);
             this.btnServer.Name = "btnServer";
-            this.btnServer.Size = new System.Drawing.Size(156, 96);
+            this.btnServer.Size = new System.Drawing.Size(117, 49);
             this.btnServer.TabIndex = 0;
             this.btnServer.Text = "Server";
             this.btnServer.UseVisualStyleBackColor = true;
@@ -45,10 +45,10 @@
             // 
             // btnClient
             // 
-            this.btnClient.Font = new System.Drawing.Font("Calibri", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClient.Location = new System.Drawing.Point(289, 72);
+            this.btnClient.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClient.Location = new System.Drawing.Point(197, 63);
             this.btnClient.Name = "btnClient";
-            this.btnClient.Size = new System.Drawing.Size(156, 96);
+            this.btnClient.Size = new System.Drawing.Size(125, 49);
             this.btnClient.TabIndex = 1;
             this.btnClient.Text = "Client";
             this.btnClient.UseVisualStyleBackColor = true;
@@ -58,7 +58,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(573, 249);
+            this.ClientSize = new System.Drawing.Size(386, 180);
             this.Controls.Add(this.btnClient);
             this.Controls.Add(this.btnServer);
             this.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

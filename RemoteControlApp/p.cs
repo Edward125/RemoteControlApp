@@ -5,6 +5,7 @@ using System.IO;
 using System.Windows.Forms ;
 using Edward;
 using System.Diagnostics;
+using System.Net;
 
 namespace RemoteControlApp
 {
@@ -42,6 +43,16 @@ namespace RemoteControlApp
             Server,
             Client
         }
+
+        /// <summary>
+        /// ip type
+        /// </summary>
+        public enum IpType
+        {
+            IPV4,
+            IPV6
+        }
+
 
 
         #region createIniFile
@@ -128,6 +139,59 @@ namespace RemoteControlApp
 
 
         #endregion
+
+
+        #region 获取IP
+
+        /// <summary>
+        /// 获取IP地址,本机IP地址hostname=dns.gethostname(),返回一个IP list
+        /// </summary>
+        /// <param name="hostname">hostname</param>
+        /// <returns>返回一个字符串类型的ip list</returns>
+        public static List<string> getIP(string hostname)
+        {
+            List<string> iplist = new List<string>();
+            System.Net.IPAddress[] addressList = Dns.GetHostAddresses(hostname);//会返回所有地址，包括IPv4和IPv6   
+            foreach (IPAddress ip in addressList)
+            {
+                iplist.Add(ip.ToString());
+            }
+            return iplist;
+        }
+
+
+
+        /// <summary>
+        /// 获取IP地址,本机IP地址hostname=dns.gethostname(),返回一个IP list
+        /// </summary>
+        /// <param name="hostname">hostname</param>
+        /// <returns>返回一个字符串类型的ip list</returns>
+        public static List<string> getIP(string hostname,IpType  iptype)
+        {
+            List<string> iplist = new List<string>();
+            System.Net.IPAddress[] addressList = Dns.GetHostAddresses(hostname);//会返回所有地址，包括IPv4和IPv6   
+            foreach (IPAddress ip in addressList)
+            {
+
+                if (iptype == IpType.IPV4)
+                {
+                    if (ip.AddressFamily.ToString() == "InterNetwork")
+                        iplist.Add(ip.ToString());
+                }
+                if (iptype == IpType.IPV6)
+                {
+                    if (ip.AddressFamily.ToString() == "InterNetworkV6")
+                        iplist.Add(ip.ToString());
+                }
+
+            }
+            return iplist;
+        }
+
+
+
+       #endregion
+
 
 
 

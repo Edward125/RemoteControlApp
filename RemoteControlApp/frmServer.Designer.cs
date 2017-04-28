@@ -29,46 +29,46 @@
         private void InitializeComponent()
         {
             this.grbMessage = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lstMessage = new System.Windows.Forms.ListBox();
-            this.grbStageConnectStatus = new System.Windows.Forms.GroupBox();
-            this.btnConnectA = new System.Windows.Forms.Button();
-            this.btnConnectB = new System.Windows.Forms.Button();
-            this.btnConnectC = new System.Windows.Forms.Button();
-            this.btnConnectD = new System.Windows.Forms.Button();
-            this.btnConnectE = new System.Windows.Forms.Button();
-            this.btnConnectF = new System.Windows.Forms.Button();
-            this.btnConnectG = new System.Windows.Forms.Button();
-            this.btnConnectH = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lblIP = new System.Windows.Forms.Label();
+            this.txtIP = new System.Windows.Forms.TextBox();
+            this.grbDuplexProgramStatus = new System.Windows.Forms.GroupBox();
+            this.btnDuplexCloseAll = new System.Windows.Forms.Button();
+            this.btnDuplexOpenAll = new System.Windows.Forms.Button();
+            this.btnDuplexH = new System.Windows.Forms.Button();
+            this.btnDuplexG = new System.Windows.Forms.Button();
+            this.btnDuplexF = new System.Windows.Forms.Button();
+            this.btnDuplexE = new System.Windows.Forms.Button();
+            this.btnDuplexD = new System.Windows.Forms.Button();
+            this.btnDuplexC = new System.Windows.Forms.Button();
+            this.btnDuplexB = new System.Windows.Forms.Button();
+            this.btnDuplexA = new System.Windows.Forms.Button();
             this.grbFICTSingle = new System.Windows.Forms.GroupBox();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
+            this.btnSingleCloseAll = new System.Windows.Forms.Button();
+            this.btnSingleOpenAll = new System.Windows.Forms.Button();
+            this.btnSingleH = new System.Windows.Forms.Button();
+            this.btnSingleG = new System.Windows.Forms.Button();
+            this.btnSingleF = new System.Windows.Forms.Button();
+            this.btnSingleE = new System.Windows.Forms.Button();
             this.btnSingleD = new System.Windows.Forms.Button();
             this.btnSingleC = new System.Windows.Forms.Button();
             this.btnSingleB = new System.Windows.Forms.Button();
-            this.btnSingeA = new System.Windows.Forms.Button();
-            this.grbDuplexProgramStatus = new System.Windows.Forms.GroupBox();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
-            this.btnSingleOpenAll = new System.Windows.Forms.Button();
-            this.btnSingleCLoseAll = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
-            this.button28 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.lblIP = new System.Windows.Forms.Label();
+            this.btnSingleA = new System.Windows.Forms.Button();
+            this.grbStageConnectStatus = new System.Windows.Forms.GroupBox();
+            this.btnConnectH = new System.Windows.Forms.Button();
+            this.btnConnectG = new System.Windows.Forms.Button();
+            this.btnConnectF = new System.Windows.Forms.Button();
+            this.btnConnectE = new System.Windows.Forms.Button();
+            this.btnConnectD = new System.Windows.Forms.Button();
+            this.btnConnectC = new System.Windows.Forms.Button();
+            this.btnConnectB = new System.Windows.Forms.Button();
+            this.btnConnectA = new System.Windows.Forms.Button();
             this.grbMessage.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.grbStageConnectStatus.SuspendLayout();
-            this.grbFICTSingle.SuspendLayout();
             this.grbDuplexProgramStatus.SuspendLayout();
+            this.grbFICTSingle.SuspendLayout();
+            this.grbStageConnectStatus.SuspendLayout();
             this.SuspendLayout();
             // 
             // grbMessage
@@ -81,20 +81,6 @@
             this.grbMessage.TabStop = false;
             this.grbMessage.Text = "History Message";
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.lblIP);
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Controls.Add(this.grbDuplexProgramStatus);
-            this.groupBox2.Controls.Add(this.grbFICTSingle);
-            this.groupBox2.Controls.Add(this.grbStageConnectStatus);
-            this.groupBox2.Location = new System.Drawing.Point(12, 12);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(644, 215);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
-            // 
             // lstMessage
             // 
             this.lstMessage.FormattingEnabled = true;
@@ -104,115 +90,169 @@
             this.lstMessage.Size = new System.Drawing.Size(626, 214);
             this.lstMessage.TabIndex = 0;
             // 
-            // grbStageConnectStatus
+            // groupBox2
             // 
-            this.grbStageConnectStatus.Controls.Add(this.btnConnectH);
-            this.grbStageConnectStatus.Controls.Add(this.btnConnectG);
-            this.grbStageConnectStatus.Controls.Add(this.btnConnectF);
-            this.grbStageConnectStatus.Controls.Add(this.btnConnectE);
-            this.grbStageConnectStatus.Controls.Add(this.btnConnectD);
-            this.grbStageConnectStatus.Controls.Add(this.btnConnectC);
-            this.grbStageConnectStatus.Controls.Add(this.btnConnectB);
-            this.grbStageConnectStatus.Controls.Add(this.btnConnectA);
-            this.grbStageConnectStatus.Location = new System.Drawing.Point(11, 58);
-            this.grbStageConnectStatus.Name = "grbStageConnectStatus";
-            this.grbStageConnectStatus.Size = new System.Drawing.Size(200, 151);
-            this.grbStageConnectStatus.TabIndex = 2;
-            this.grbStageConnectStatus.TabStop = false;
-            this.grbStageConnectStatus.Text = "FICT Stage Connect Status";
+            this.groupBox2.Controls.Add(this.lblIP);
+            this.groupBox2.Controls.Add(this.txtIP);
+            this.groupBox2.Controls.Add(this.grbDuplexProgramStatus);
+            this.groupBox2.Controls.Add(this.grbFICTSingle);
+            this.groupBox2.Controls.Add(this.grbStageConnectStatus);
+            this.groupBox2.Location = new System.Drawing.Point(12, 12);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(644, 215);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "System Status";
             // 
-            // btnConnectA
+            // lblIP
             // 
-            this.btnConnectA.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnConnectA.Location = new System.Drawing.Point(6, 21);
-            this.btnConnectA.Name = "btnConnectA";
-            this.btnConnectA.Size = new System.Drawing.Size(89, 26);
-            this.btnConnectA.TabIndex = 3;
-            this.btnConnectA.Text = "A Disconnect";
-            this.btnConnectA.UseVisualStyleBackColor = true;
+            this.lblIP.AutoSize = true;
+            this.lblIP.Location = new System.Drawing.Point(13, 33);
+            this.lblIP.Name = "lblIP";
+            this.lblIP.Size = new System.Drawing.Size(20, 14);
+            this.lblIP.TabIndex = 14;
+            this.lblIP.Text = "IP:";
             // 
-            // btnConnectB
+            // txtIP
             // 
-            this.btnConnectB.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnConnectB.Location = new System.Drawing.Point(6, 53);
-            this.btnConnectB.Name = "btnConnectB";
-            this.btnConnectB.Size = new System.Drawing.Size(89, 26);
-            this.btnConnectB.TabIndex = 4;
-            this.btnConnectB.Text = "B Disconnect";
-            this.btnConnectB.UseVisualStyleBackColor = true;
+            this.txtIP.Location = new System.Drawing.Point(39, 30);
+            this.txtIP.Name = "txtIP";
+            this.txtIP.ReadOnly = true;
+            this.txtIP.Size = new System.Drawing.Size(172, 22);
+            this.txtIP.TabIndex = 13;
+            this.txtIP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // btnConnectC
+            // grbDuplexProgramStatus
             // 
-            this.btnConnectC.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnConnectC.Location = new System.Drawing.Point(6, 85);
-            this.btnConnectC.Name = "btnConnectC";
-            this.btnConnectC.Size = new System.Drawing.Size(89, 26);
-            this.btnConnectC.TabIndex = 5;
-            this.btnConnectC.Text = "C Disconnect";
-            this.btnConnectC.UseVisualStyleBackColor = true;
+            this.grbDuplexProgramStatus.Controls.Add(this.btnDuplexCloseAll);
+            this.grbDuplexProgramStatus.Controls.Add(this.btnDuplexOpenAll);
+            this.grbDuplexProgramStatus.Controls.Add(this.btnDuplexH);
+            this.grbDuplexProgramStatus.Controls.Add(this.btnDuplexG);
+            this.grbDuplexProgramStatus.Controls.Add(this.btnDuplexF);
+            this.grbDuplexProgramStatus.Controls.Add(this.btnDuplexE);
+            this.grbDuplexProgramStatus.Controls.Add(this.btnDuplexD);
+            this.grbDuplexProgramStatus.Controls.Add(this.btnDuplexC);
+            this.grbDuplexProgramStatus.Controls.Add(this.btnDuplexB);
+            this.grbDuplexProgramStatus.Controls.Add(this.btnDuplexA);
+            this.grbDuplexProgramStatus.Location = new System.Drawing.Point(435, 27);
+            this.grbDuplexProgramStatus.Name = "grbDuplexProgramStatus";
+            this.grbDuplexProgramStatus.Size = new System.Drawing.Size(203, 180);
+            this.grbDuplexProgramStatus.TabIndex = 12;
+            this.grbDuplexProgramStatus.TabStop = false;
+            this.grbDuplexProgramStatus.Text = "FICT Duplex Program Status";
             // 
-            // btnConnectD
+            // btnDuplexCloseAll
             // 
-            this.btnConnectD.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnConnectD.Location = new System.Drawing.Point(6, 117);
-            this.btnConnectD.Name = "btnConnectD";
-            this.btnConnectD.Size = new System.Drawing.Size(89, 26);
-            this.btnConnectD.TabIndex = 6;
-            this.btnConnectD.Text = "D Disconnct";
-            this.btnConnectD.UseVisualStyleBackColor = true;
+            this.btnDuplexCloseAll.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnDuplexCloseAll.Location = new System.Drawing.Point(106, 149);
+            this.btnDuplexCloseAll.Name = "btnDuplexCloseAll";
+            this.btnDuplexCloseAll.Size = new System.Drawing.Size(89, 26);
+            this.btnDuplexCloseAll.TabIndex = 12;
+            this.btnDuplexCloseAll.Text = "Close All";
+            this.btnDuplexCloseAll.UseVisualStyleBackColor = true;
             // 
-            // btnConnectE
+            // btnDuplexOpenAll
             // 
-            this.btnConnectE.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnConnectE.Location = new System.Drawing.Point(101, 21);
-            this.btnConnectE.Name = "btnConnectE";
-            this.btnConnectE.Size = new System.Drawing.Size(89, 26);
-            this.btnConnectE.TabIndex = 7;
-            this.btnConnectE.Text = "E Disconnect";
-            this.btnConnectE.UseVisualStyleBackColor = true;
+            this.btnDuplexOpenAll.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnDuplexOpenAll.Location = new System.Drawing.Point(6, 149);
+            this.btnDuplexOpenAll.Name = "btnDuplexOpenAll";
+            this.btnDuplexOpenAll.Size = new System.Drawing.Size(89, 26);
+            this.btnDuplexOpenAll.TabIndex = 11;
+            this.btnDuplexOpenAll.Text = "Open All";
+            this.btnDuplexOpenAll.UseVisualStyleBackColor = true;
             // 
-            // btnConnectF
+            // btnDuplexH
             // 
-            this.btnConnectF.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnConnectF.Location = new System.Drawing.Point(101, 53);
-            this.btnConnectF.Name = "btnConnectF";
-            this.btnConnectF.Size = new System.Drawing.Size(89, 26);
-            this.btnConnectF.TabIndex = 8;
-            this.btnConnectF.Text = "F Disconnect";
-            this.btnConnectF.UseVisualStyleBackColor = true;
+            this.btnDuplexH.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnDuplexH.Location = new System.Drawing.Point(106, 117);
+            this.btnDuplexH.Name = "btnDuplexH";
+            this.btnDuplexH.Size = new System.Drawing.Size(89, 26);
+            this.btnDuplexH.TabIndex = 10;
+            this.btnDuplexH.Text = "H Close";
+            this.btnDuplexH.UseVisualStyleBackColor = true;
             // 
-            // btnConnectG
+            // btnDuplexG
             // 
-            this.btnConnectG.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnConnectG.Location = new System.Drawing.Point(101, 85);
-            this.btnConnectG.Name = "btnConnectG";
-            this.btnConnectG.Size = new System.Drawing.Size(89, 26);
-            this.btnConnectG.TabIndex = 9;
-            this.btnConnectG.Text = "G Disconnect";
-            this.btnConnectG.UseVisualStyleBackColor = true;
+            this.btnDuplexG.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnDuplexG.Location = new System.Drawing.Point(106, 85);
+            this.btnDuplexG.Name = "btnDuplexG";
+            this.btnDuplexG.Size = new System.Drawing.Size(89, 26);
+            this.btnDuplexG.TabIndex = 9;
+            this.btnDuplexG.Text = "G Close";
+            this.btnDuplexG.UseVisualStyleBackColor = true;
             // 
-            // btnConnectH
+            // btnDuplexF
             // 
-            this.btnConnectH.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnConnectH.Location = new System.Drawing.Point(101, 117);
-            this.btnConnectH.Name = "btnConnectH";
-            this.btnConnectH.Size = new System.Drawing.Size(89, 26);
-            this.btnConnectH.TabIndex = 10;
-            this.btnConnectH.Text = "H Disconnect";
-            this.btnConnectH.UseVisualStyleBackColor = true;
+            this.btnDuplexF.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnDuplexF.Location = new System.Drawing.Point(106, 53);
+            this.btnDuplexF.Name = "btnDuplexF";
+            this.btnDuplexF.Size = new System.Drawing.Size(89, 26);
+            this.btnDuplexF.TabIndex = 8;
+            this.btnDuplexF.Text = "F Close";
+            this.btnDuplexF.UseVisualStyleBackColor = true;
+            // 
+            // btnDuplexE
+            // 
+            this.btnDuplexE.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnDuplexE.Location = new System.Drawing.Point(106, 21);
+            this.btnDuplexE.Name = "btnDuplexE";
+            this.btnDuplexE.Size = new System.Drawing.Size(89, 26);
+            this.btnDuplexE.TabIndex = 7;
+            this.btnDuplexE.Text = "E Close";
+            this.btnDuplexE.UseVisualStyleBackColor = true;
+            // 
+            // btnDuplexD
+            // 
+            this.btnDuplexD.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnDuplexD.Location = new System.Drawing.Point(6, 117);
+            this.btnDuplexD.Name = "btnDuplexD";
+            this.btnDuplexD.Size = new System.Drawing.Size(89, 26);
+            this.btnDuplexD.TabIndex = 6;
+            this.btnDuplexD.Text = "D Close";
+            this.btnDuplexD.UseVisualStyleBackColor = true;
+            // 
+            // btnDuplexC
+            // 
+            this.btnDuplexC.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnDuplexC.Location = new System.Drawing.Point(6, 85);
+            this.btnDuplexC.Name = "btnDuplexC";
+            this.btnDuplexC.Size = new System.Drawing.Size(89, 26);
+            this.btnDuplexC.TabIndex = 5;
+            this.btnDuplexC.Text = "C Close";
+            this.btnDuplexC.UseVisualStyleBackColor = true;
+            // 
+            // btnDuplexB
+            // 
+            this.btnDuplexB.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnDuplexB.Location = new System.Drawing.Point(6, 53);
+            this.btnDuplexB.Name = "btnDuplexB";
+            this.btnDuplexB.Size = new System.Drawing.Size(89, 26);
+            this.btnDuplexB.TabIndex = 4;
+            this.btnDuplexB.Text = "B Close";
+            this.btnDuplexB.UseVisualStyleBackColor = true;
+            // 
+            // btnDuplexA
+            // 
+            this.btnDuplexA.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnDuplexA.Location = new System.Drawing.Point(6, 21);
+            this.btnDuplexA.Name = "btnDuplexA";
+            this.btnDuplexA.Size = new System.Drawing.Size(89, 26);
+            this.btnDuplexA.TabIndex = 3;
+            this.btnDuplexA.Text = "A Close";
+            this.btnDuplexA.UseVisualStyleBackColor = true;
             // 
             // grbFICTSingle
             // 
-            this.grbFICTSingle.Controls.Add(this.btnSingleCLoseAll);
+            this.grbFICTSingle.Controls.Add(this.btnSingleCloseAll);
             this.grbFICTSingle.Controls.Add(this.btnSingleOpenAll);
-            this.grbFICTSingle.Controls.Add(this.button9);
-            this.grbFICTSingle.Controls.Add(this.button10);
-            this.grbFICTSingle.Controls.Add(this.button11);
-            this.grbFICTSingle.Controls.Add(this.button12);
+            this.grbFICTSingle.Controls.Add(this.btnSingleH);
+            this.grbFICTSingle.Controls.Add(this.btnSingleG);
+            this.grbFICTSingle.Controls.Add(this.btnSingleF);
+            this.grbFICTSingle.Controls.Add(this.btnSingleE);
             this.grbFICTSingle.Controls.Add(this.btnSingleD);
             this.grbFICTSingle.Controls.Add(this.btnSingleC);
             this.grbFICTSingle.Controls.Add(this.btnSingleB);
-            this.grbFICTSingle.Controls.Add(this.btnSingeA);
+            this.grbFICTSingle.Controls.Add(this.btnSingleA);
             this.grbFICTSingle.Location = new System.Drawing.Point(222, 27);
             this.grbFICTSingle.Name = "grbFICTSingle";
             this.grbFICTSingle.Size = new System.Drawing.Size(202, 180);
@@ -220,45 +260,65 @@
             this.grbFICTSingle.TabStop = false;
             this.grbFICTSingle.Text = "FICT Single Program Status";
             // 
-            // button9
+            // btnSingleCloseAll
             // 
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button9.Location = new System.Drawing.Point(101, 117);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(89, 26);
-            this.button9.TabIndex = 10;
-            this.button9.Text = "button9";
-            this.button9.UseVisualStyleBackColor = true;
+            this.btnSingleCloseAll.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSingleCloseAll.Location = new System.Drawing.Point(101, 149);
+            this.btnSingleCloseAll.Name = "btnSingleCloseAll";
+            this.btnSingleCloseAll.Size = new System.Drawing.Size(89, 26);
+            this.btnSingleCloseAll.TabIndex = 12;
+            this.btnSingleCloseAll.Text = "Close All";
+            this.btnSingleCloseAll.UseVisualStyleBackColor = true;
             // 
-            // button10
+            // btnSingleOpenAll
             // 
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button10.Location = new System.Drawing.Point(101, 85);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(89, 26);
-            this.button10.TabIndex = 9;
-            this.button10.Text = "button10";
-            this.button10.UseVisualStyleBackColor = true;
+            this.btnSingleOpenAll.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSingleOpenAll.Location = new System.Drawing.Point(6, 149);
+            this.btnSingleOpenAll.Name = "btnSingleOpenAll";
+            this.btnSingleOpenAll.Size = new System.Drawing.Size(89, 26);
+            this.btnSingleOpenAll.TabIndex = 11;
+            this.btnSingleOpenAll.Text = "Open All";
+            this.btnSingleOpenAll.UseVisualStyleBackColor = true;
             // 
-            // button11
+            // btnSingleH
             // 
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button11.Location = new System.Drawing.Point(101, 53);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(89, 26);
-            this.button11.TabIndex = 8;
-            this.button11.Text = "button11";
-            this.button11.UseVisualStyleBackColor = true;
+            this.btnSingleH.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSingleH.Location = new System.Drawing.Point(101, 117);
+            this.btnSingleH.Name = "btnSingleH";
+            this.btnSingleH.Size = new System.Drawing.Size(89, 26);
+            this.btnSingleH.TabIndex = 10;
+            this.btnSingleH.Text = "H Close";
+            this.btnSingleH.UseVisualStyleBackColor = true;
             // 
-            // button12
+            // btnSingleG
             // 
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button12.Location = new System.Drawing.Point(101, 21);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(89, 26);
-            this.button12.TabIndex = 7;
-            this.button12.Text = "button12";
-            this.button12.UseVisualStyleBackColor = true;
+            this.btnSingleG.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSingleG.Location = new System.Drawing.Point(101, 85);
+            this.btnSingleG.Name = "btnSingleG";
+            this.btnSingleG.Size = new System.Drawing.Size(89, 26);
+            this.btnSingleG.TabIndex = 9;
+            this.btnSingleG.Text = "G Close";
+            this.btnSingleG.UseVisualStyleBackColor = true;
+            // 
+            // btnSingleF
+            // 
+            this.btnSingleF.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSingleF.Location = new System.Drawing.Point(101, 53);
+            this.btnSingleF.Name = "btnSingleF";
+            this.btnSingleF.Size = new System.Drawing.Size(89, 26);
+            this.btnSingleF.TabIndex = 8;
+            this.btnSingleF.Text = "F Close";
+            this.btnSingleF.UseVisualStyleBackColor = true;
+            // 
+            // btnSingleE
+            // 
+            this.btnSingleE.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSingleE.Location = new System.Drawing.Point(101, 21);
+            this.btnSingleE.Name = "btnSingleE";
+            this.btnSingleE.Size = new System.Drawing.Size(89, 26);
+            this.btnSingleE.TabIndex = 7;
+            this.btnSingleE.Text = "E Close";
+            this.btnSingleE.UseVisualStyleBackColor = true;
             // 
             // btnSingleD
             // 
@@ -290,170 +350,112 @@
             this.btnSingleB.Text = "B Close";
             this.btnSingleB.UseVisualStyleBackColor = true;
             // 
-            // btnSingeA
+            // btnSingleA
             // 
-            this.btnSingeA.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSingeA.Location = new System.Drawing.Point(6, 21);
-            this.btnSingeA.Name = "btnSingeA";
-            this.btnSingeA.Size = new System.Drawing.Size(89, 26);
-            this.btnSingeA.TabIndex = 3;
-            this.btnSingeA.Text = "A Close";
-            this.btnSingeA.UseVisualStyleBackColor = true;
+            this.btnSingleA.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSingleA.Location = new System.Drawing.Point(6, 21);
+            this.btnSingleA.Name = "btnSingleA";
+            this.btnSingleA.Size = new System.Drawing.Size(89, 26);
+            this.btnSingleA.TabIndex = 3;
+            this.btnSingleA.Text = "A Close";
+            this.btnSingleA.UseVisualStyleBackColor = true;
             // 
-            // grbDuplexProgramStatus
+            // grbStageConnectStatus
             // 
-            this.grbDuplexProgramStatus.Controls.Add(this.button27);
-            this.grbDuplexProgramStatus.Controls.Add(this.button28);
-            this.grbDuplexProgramStatus.Controls.Add(this.button17);
-            this.grbDuplexProgramStatus.Controls.Add(this.button18);
-            this.grbDuplexProgramStatus.Controls.Add(this.button19);
-            this.grbDuplexProgramStatus.Controls.Add(this.button20);
-            this.grbDuplexProgramStatus.Controls.Add(this.button21);
-            this.grbDuplexProgramStatus.Controls.Add(this.button22);
-            this.grbDuplexProgramStatus.Controls.Add(this.button23);
-            this.grbDuplexProgramStatus.Controls.Add(this.button24);
-            this.grbDuplexProgramStatus.Location = new System.Drawing.Point(435, 27);
-            this.grbDuplexProgramStatus.Name = "grbDuplexProgramStatus";
-            this.grbDuplexProgramStatus.Size = new System.Drawing.Size(203, 180);
-            this.grbDuplexProgramStatus.TabIndex = 12;
-            this.grbDuplexProgramStatus.TabStop = false;
-            this.grbDuplexProgramStatus.Text = "FICT Duplex Program Status";
+            this.grbStageConnectStatus.Controls.Add(this.btnConnectH);
+            this.grbStageConnectStatus.Controls.Add(this.btnConnectG);
+            this.grbStageConnectStatus.Controls.Add(this.btnConnectF);
+            this.grbStageConnectStatus.Controls.Add(this.btnConnectE);
+            this.grbStageConnectStatus.Controls.Add(this.btnConnectD);
+            this.grbStageConnectStatus.Controls.Add(this.btnConnectC);
+            this.grbStageConnectStatus.Controls.Add(this.btnConnectB);
+            this.grbStageConnectStatus.Controls.Add(this.btnConnectA);
+            this.grbStageConnectStatus.Location = new System.Drawing.Point(11, 58);
+            this.grbStageConnectStatus.Name = "grbStageConnectStatus";
+            this.grbStageConnectStatus.Size = new System.Drawing.Size(200, 151);
+            this.grbStageConnectStatus.TabIndex = 2;
+            this.grbStageConnectStatus.TabStop = false;
+            this.grbStageConnectStatus.Text = "FICT Stage Connect Status";
             // 
-            // button17
+            // btnConnectH
             // 
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button17.Location = new System.Drawing.Point(106, 117);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(89, 26);
-            this.button17.TabIndex = 10;
-            this.button17.Text = "button17";
-            this.button17.UseVisualStyleBackColor = true;
+            this.btnConnectH.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnConnectH.Location = new System.Drawing.Point(101, 117);
+            this.btnConnectH.Name = "btnConnectH";
+            this.btnConnectH.Size = new System.Drawing.Size(89, 26);
+            this.btnConnectH.TabIndex = 10;
+            this.btnConnectH.Text = "H Disconnect";
+            this.btnConnectH.UseVisualStyleBackColor = true;
             // 
-            // button18
+            // btnConnectG
             // 
-            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button18.Location = new System.Drawing.Point(106, 85);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(89, 26);
-            this.button18.TabIndex = 9;
-            this.button18.Text = "button18";
-            this.button18.UseVisualStyleBackColor = true;
+            this.btnConnectG.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnConnectG.Location = new System.Drawing.Point(101, 85);
+            this.btnConnectG.Name = "btnConnectG";
+            this.btnConnectG.Size = new System.Drawing.Size(89, 26);
+            this.btnConnectG.TabIndex = 9;
+            this.btnConnectG.Text = "G Disconnect";
+            this.btnConnectG.UseVisualStyleBackColor = true;
             // 
-            // button19
+            // btnConnectF
             // 
-            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button19.Location = new System.Drawing.Point(106, 53);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(89, 26);
-            this.button19.TabIndex = 8;
-            this.button19.Text = "button19";
-            this.button19.UseVisualStyleBackColor = true;
+            this.btnConnectF.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnConnectF.Location = new System.Drawing.Point(101, 53);
+            this.btnConnectF.Name = "btnConnectF";
+            this.btnConnectF.Size = new System.Drawing.Size(89, 26);
+            this.btnConnectF.TabIndex = 8;
+            this.btnConnectF.Text = "F Disconnect";
+            this.btnConnectF.UseVisualStyleBackColor = true;
             // 
-            // button20
+            // btnConnectE
             // 
-            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button20.Location = new System.Drawing.Point(106, 21);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(89, 26);
-            this.button20.TabIndex = 7;
-            this.button20.Text = "button20";
-            this.button20.UseVisualStyleBackColor = true;
+            this.btnConnectE.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnConnectE.Location = new System.Drawing.Point(101, 21);
+            this.btnConnectE.Name = "btnConnectE";
+            this.btnConnectE.Size = new System.Drawing.Size(89, 26);
+            this.btnConnectE.TabIndex = 7;
+            this.btnConnectE.Text = "E Disconnect";
+            this.btnConnectE.UseVisualStyleBackColor = true;
             // 
-            // button21
+            // btnConnectD
             // 
-            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button21.Location = new System.Drawing.Point(6, 117);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(89, 26);
-            this.button21.TabIndex = 6;
-            this.button21.Text = "button21";
-            this.button21.UseVisualStyleBackColor = true;
+            this.btnConnectD.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnConnectD.Location = new System.Drawing.Point(6, 117);
+            this.btnConnectD.Name = "btnConnectD";
+            this.btnConnectD.Size = new System.Drawing.Size(89, 26);
+            this.btnConnectD.TabIndex = 6;
+            this.btnConnectD.Text = "D Disconnct";
+            this.btnConnectD.UseVisualStyleBackColor = true;
             // 
-            // button22
+            // btnConnectC
             // 
-            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button22.Location = new System.Drawing.Point(6, 85);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(89, 26);
-            this.button22.TabIndex = 5;
-            this.button22.Text = "button22";
-            this.button22.UseVisualStyleBackColor = true;
+            this.btnConnectC.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnConnectC.Location = new System.Drawing.Point(6, 85);
+            this.btnConnectC.Name = "btnConnectC";
+            this.btnConnectC.Size = new System.Drawing.Size(89, 26);
+            this.btnConnectC.TabIndex = 5;
+            this.btnConnectC.Text = "C Disconnect";
+            this.btnConnectC.UseVisualStyleBackColor = true;
             // 
-            // button23
+            // btnConnectB
             // 
-            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button23.Location = new System.Drawing.Point(6, 53);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(89, 26);
-            this.button23.TabIndex = 4;
-            this.button23.Text = "button23";
-            this.button23.UseVisualStyleBackColor = true;
+            this.btnConnectB.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnConnectB.Location = new System.Drawing.Point(6, 53);
+            this.btnConnectB.Name = "btnConnectB";
+            this.btnConnectB.Size = new System.Drawing.Size(89, 26);
+            this.btnConnectB.TabIndex = 4;
+            this.btnConnectB.Text = "B Disconnect";
+            this.btnConnectB.UseVisualStyleBackColor = true;
             // 
-            // button24
+            // btnConnectA
             // 
-            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button24.Location = new System.Drawing.Point(6, 21);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(89, 26);
-            this.button24.TabIndex = 3;
-            this.button24.Text = "button24";
-            this.button24.UseVisualStyleBackColor = true;
-            // 
-            // btnSingleOpenAll
-            // 
-            this.btnSingleOpenAll.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSingleOpenAll.Location = new System.Drawing.Point(6, 149);
-            this.btnSingleOpenAll.Name = "btnSingleOpenAll";
-            this.btnSingleOpenAll.Size = new System.Drawing.Size(89, 26);
-            this.btnSingleOpenAll.TabIndex = 11;
-            this.btnSingleOpenAll.Text = "Open All";
-            this.btnSingleOpenAll.UseVisualStyleBackColor = true;
-            // 
-            // btnSingleCLoseAll
-            // 
-            this.btnSingleCLoseAll.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSingleCLoseAll.Location = new System.Drawing.Point(101, 149);
-            this.btnSingleCLoseAll.Name = "btnSingleCLoseAll";
-            this.btnSingleCLoseAll.Size = new System.Drawing.Size(89, 26);
-            this.btnSingleCLoseAll.TabIndex = 12;
-            this.btnSingleCLoseAll.Text = "Close All";
-            this.btnSingleCLoseAll.UseVisualStyleBackColor = true;
-            // 
-            // button27
-            // 
-            this.button27.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button27.Location = new System.Drawing.Point(106, 149);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(89, 26);
-            this.button27.TabIndex = 12;
-            this.button27.Text = "button27";
-            this.button27.UseVisualStyleBackColor = true;
-            // 
-            // button28
-            // 
-            this.button28.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button28.Location = new System.Drawing.Point(6, 149);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(89, 26);
-            this.button28.TabIndex = 11;
-            this.button28.Text = "button28";
-            this.button28.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(39, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(172, 22);
-            this.textBox1.TabIndex = 13;
-            // 
-            // lblIP
-            // 
-            this.lblIP.AutoSize = true;
-            this.lblIP.Location = new System.Drawing.Point(13, 33);
-            this.lblIP.Name = "lblIP";
-            this.lblIP.Size = new System.Drawing.Size(20, 14);
-            this.lblIP.TabIndex = 14;
-            this.lblIP.Text = "IP:";
+            this.btnConnectA.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnConnectA.Location = new System.Drawing.Point(6, 21);
+            this.btnConnectA.Name = "btnConnectA";
+            this.btnConnectA.Size = new System.Drawing.Size(89, 26);
+            this.btnConnectA.TabIndex = 3;
+            this.btnConnectA.Text = "A Disconnect";
+            this.btnConnectA.UseVisualStyleBackColor = true;
             // 
             // frmServer
             // 
@@ -465,12 +467,13 @@
             this.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "frmServer";
             this.Text = "frmServer";
+            this.Load += new System.EventHandler(this.frmServer_Load);
             this.grbMessage.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.grbStageConnectStatus.ResumeLayout(false);
-            this.grbFICTSingle.ResumeLayout(false);
             this.grbDuplexProgramStatus.ResumeLayout(false);
+            this.grbFICTSingle.ResumeLayout(false);
+            this.grbStageConnectStatus.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -482,23 +485,23 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox grbStageConnectStatus;
         private System.Windows.Forms.GroupBox grbDuplexProgramStatus;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.Button btnDuplexH;
+        private System.Windows.Forms.Button btnDuplexG;
+        private System.Windows.Forms.Button btnDuplexF;
+        private System.Windows.Forms.Button btnDuplexE;
+        private System.Windows.Forms.Button btnDuplexD;
+        private System.Windows.Forms.Button btnDuplexC;
+        private System.Windows.Forms.Button btnDuplexB;
+        private System.Windows.Forms.Button btnDuplexA;
         private System.Windows.Forms.GroupBox grbFICTSingle;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button btnSingleH;
+        private System.Windows.Forms.Button btnSingleG;
+        private System.Windows.Forms.Button btnSingleF;
+        private System.Windows.Forms.Button btnSingleE;
         private System.Windows.Forms.Button btnSingleD;
         private System.Windows.Forms.Button btnSingleC;
         private System.Windows.Forms.Button btnSingleB;
-        private System.Windows.Forms.Button btnSingeA;
+        private System.Windows.Forms.Button btnSingleA;
         private System.Windows.Forms.Button btnConnectH;
         private System.Windows.Forms.Button btnConnectG;
         private System.Windows.Forms.Button btnConnectF;
@@ -508,10 +511,10 @@
         private System.Windows.Forms.Button btnConnectB;
         private System.Windows.Forms.Button btnConnectA;
         private System.Windows.Forms.Label lblIP;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button27;
-        private System.Windows.Forms.Button button28;
-        private System.Windows.Forms.Button btnSingleCLoseAll;
+        private System.Windows.Forms.TextBox txtIP;
+        private System.Windows.Forms.Button btnDuplexCloseAll;
+        private System.Windows.Forms.Button btnDuplexOpenAll;
+        private System.Windows.Forms.Button btnSingleCloseAll;
         private System.Windows.Forms.Button btnSingleOpenAll;
     }
 }
